@@ -14,6 +14,9 @@ class Main extends PluginBase implements Listener
     protected function onEnable(): void
     {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
+
+        #World::getXZ(225, $x, $z);
+        #var_dump($this->getServer()->getWorldManager()->getDefaultWorld()->loadChunk($x, $z));
     }
 
     protected function onDisable(): void

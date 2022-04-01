@@ -15,7 +15,8 @@ class ImageTable
     public function __construct(string $dir) {
         foreach (VanillaBlocks::getAll() as $block => $id) {
             if (!file_exists($dir . "images/" . strtolower($id->getName()) . ".png")) {
-                continue;
+                $image = imagecreatetruecolor(16, 16);
+                imagefilltoborder($image, 0, 0, imagecolorallocate($image, ));
             }
 
             $this->imageCache[$id->getId()] = imagecreatefrompng($dir . "images/" . strtolower($id->getName()) . ".png");
