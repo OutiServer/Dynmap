@@ -3,5 +3,4 @@ main: Ken_Cir\Dynmap\Main
 description: Dynmap
 author: Ken_Cir
 version: 1.0.0
-api: 4.2.3
-mcpe-protocol: 486
+api: 4.0.0
